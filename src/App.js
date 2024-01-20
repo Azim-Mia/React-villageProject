@@ -1,5 +1,7 @@
+import React from 'react';
+import Header from '/data/data/com.termux/files/home/utmarchar/src/header/header.js';
 function App() {
-  return <h1 className="a"> hello</h1>
+  return <div><Header /></div>
 }
 
 export default App;

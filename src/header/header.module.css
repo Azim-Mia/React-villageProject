@@ -1,0 +1,163 @@
+.header{
+  height: 5vh;
+  width: auto;
+  font-size: 2rem;
+  padding: 10px 0px;
+  color: #000;
+}
+.barsIconContainer{
+  display: flex;
+}
+.textUtmarChar{
+  margin-left: 4vh;
+  flex: 3;
+  font-family: Verdana;
+  font-size: 3rem;
+  animation-name: utmarchar;
+  color: yellow;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes utmarchar{
+  20%{
+  color: red;  
+  }
+  40%{
+   color: yelllow; 
+  }
+  60%{
+   color:tomato; 
+  }
+  80%{
+  color: yellow;  
+  }
+ 100%{
+color:coral;   
+ } 
+}
+.barsIcon{
+  flex: 1;
+  color:#000;
+  border-radius: 20px;
+  font-size: 3rem;
+  background: coral;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+}
+.barsIcon:hover{
+  color:yellow;
+}
+.drop_list{
+  display: none;
+  background: #000;
+  width: 15vh;
+}
+.bars{
+  margin-left: 1rem;
+}
+.bars:hover .drop_list{
+  display: block;
+}
+ul{
+  padding: 0px;
+}
+li{
+  list-style: none;
+  color:#fff;
+  padding: 5px 15px;
+  border: 2px solid coral;
+ transition: 1s;
+}
+li:hover{
+  color:#000;
+  background:yellow;
+}
+
+router{
+}
+nav{
+display: flex;
+justify-content:center;
+align-items: center;
+}
+nav div{
+  padding: 20px;
+}
+.NavlinkDesign{
+  color:#fff;
+  background: #000;
+  padding: 10px;
+  font-family: Verdana;
+  font-size: 3rem;
+  text-decoration: none;
+  border-radius:10px;
+}
+.NavlinkDesign:hover{
+  background: pink;
+  color:yellow;
+}
+@media screen and (max-width: 720px) {
+.header{
+  height: 3vh;
+  width: auto;
+  font-size: 1.5rem;
+  padding: 4px 0px;
+  width: 720px;
+  color: #000;
+}
+.textUtmarChar{
+  margin-left: 1vh;
+  flex:3 ;
+  font-family: Verdana;
+  font-size: 1.8rem;
+  animation-name: utmarchar;
+  color: yellow;
+}
+.barsIcon{
+  flex:1 ;
+  color:#000;
+  border-radius: 10px;
+  font-size: 2rem;
+  background: coral;
+  height: 60px;
+  width: 30px;
+  text-align: center;
+  padding: 10px;
+}
+.barsIcon:hover{
+  color:yellow;
+}
+.drop_list{
+  display: none;
+  background: #000;
+  width: 20vh;
+}
+.router{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 720px;
+}
+nav div{
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+.NavlinkDesign{
+  color:#fff;
+  background:#000;
+  padding: 4px;
+  font-family: Verdana;
+  font-size: 2rem;
+  text-decoration: none;
+  border-radius:10px;
+}
+.NavlinkDesign:hover{
+  background: pink;
+  color:yellow;
+}
+}

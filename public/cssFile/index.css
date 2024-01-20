@@ -1,0 +1,82 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#root{
+  text-align: center;
+}
+body{
+  background:#333 ;
+  color: #fff;
+  background-image: url('/images/azim.jpg');
+background-repeat:no-repeat;
+background-attachment: fixed;
+background-position: fixed;
+background-size: 992px;
+}
+.container{
+height: 6vh;
+  background: pink;
+  position: sticky;
+  position: position;
+}
+.village{
+  height: 6vh;
+  background: pink;
+  box-shadow: 4px 3px 8px yellow, -4px -3px 8px yellow ;
+  border-radius:10px ;
+  text-align: center;
+animation-name: villages;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+@keyframes villages{
+  body{
+    background-size:auto;
+    text-align: center;
+  }
+  from{
+    font-size: 1rem;
+    color:blue;
+  }
+  to{
+    font-size: 2rem;
+    color: #000;
+  }
+}
+@media screen and (max-width: 720px) {
+  body{
+    text-align: center;
+    align-items: center;
+  background:#333 ;
+  color: #fff;
+  width:620px;
+  background-image: url('/images/azim.jpg');
+background-repeat:no-repeat;
+background-attachment: fixed;
+background-position: fixed;
+background-size:720px;
+}
+.village{
+  height: 10vh;
+  width: 720px;
+  background: pink;
+  box-shadow: 4px 3px 8px yellow, -4px -3px 8px yellow ;
+  border-radius:10px ;
+  text-align: center;
+animation-name: villages;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+@keyframes villages{
+  from{
+    font-size: 1rem;
+    color:blue;
+  }
+  to{
+    font-size: 2rem;
+    color: #000;
+  }
+}
+}
