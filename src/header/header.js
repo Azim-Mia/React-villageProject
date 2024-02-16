@@ -2,9 +2,9 @@ import React from 'react';
 //import { NavLink } from "react-router-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Style from './header.module.css';
-import Navber from '/data/data/com.termux/files/home/utmarchar/src/header/linkAllPage.js';
-import Home from '/data/data/com.termux/files/home/utmarchar/src/home/home.js'
-import Register from '/data/data/com.termux/files/home/utmarchar/src/register/register.js'
+import Navber from '/data/data/com.termux/files/home/React-villageProject/src/header/linkAllPage.js';
+import Home from '/data/data/com.termux/files/home/React-villageProject/src/home/home.js'
+import Register from '/data/data/com.termux/files/home/React-villageProject/src/register/register.js'
 // npm install react-icons --save
 // tarpor import
 import { FaBars } from "react-icons/fa";
