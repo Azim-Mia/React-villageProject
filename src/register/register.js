@@ -1,8 +1,10 @@
 import React,{useState} from 'react';
+import {useNavigate} from 'react-router-dom'
 import axios from 'axios';
 import Style from './register.module.css'
 const Register=()=>{
-  const [name, setName]=useState("djkdjdjd")
+  const navigate=useNavigate();
+  const [name, setName]=useState("")
   const [fatherName, setFatherName]=useState('')
   const [motherName,setMotherName]=useState('')
   const [email,setEmail]=useState('')
@@ -14,10 +16,17 @@ const Register=()=>{
   const [address, setAddress]=useState('')
  const [image,setImage]=useState('')
 const user= {name:name,fatherName:fatherName,motherName:motherName,email:email,password:password,address:address,postCode:postCode,village:village,image:image,nid:nid,birthId:birthId};
-  const handleSubmit=(e)=>{
-   axios.defaults.withCredentials=true;
-    e.preventDefault();
-    alert(user.image)
+  const handleSubmit=async(e)=>{
+ try{
+ axios.defaults.withCredentials=true;
+   e.preventDefault();
+  const res=  await axios.post("http://localhost:3001/create",user);
+  if(res.data.success){
+  navigate('/info')
+  }
+   }catch(err){
+     alert(err.message)
+   }
   }
   return <div className={Style.container}>
 <form onSubmit={handleSubmit}>
@@ -64,7 +73,7 @@ const user= {name:name,fatherName:fatherName,motherName:motherName,email:email,p
 </div>
 <div>
 <lable for id="image" className={Style.lable}>Image:</lable>
-<input className={Style.input} type="file" name="image" placeholder="Enter your password" onChange={(e)=>setImage(e.target.value)}/>
+<input className={Style.input} type="text" name="image" placeholder="Enter your password" onChange={(e)=>setImage(e.target.value)}/>
 </div>
 <div><button className={Style.btn} type="submit">Submit</button></div>
 </form>

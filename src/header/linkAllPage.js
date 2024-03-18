@@ -8,6 +8,8 @@ function Navber(){
   <div>
   <NavLink className={Style.NavlinkDesign} to="/register">Register</NavLink></div>
     <div><NavLink className={Style.NavlinkDesign} to="/login">Login</NavLink></div>
+    <div><NavLink className={Style.NavlinkDesign} to="/logout">LogOut</NavLink></div>
+    <div><NavLink className={Style.NavlinkDesign} to="/card">Card</NavLink></div>
       <div><NavLink className={Style.NavlinkDesign} to="/info">Information</NavLink></div>
 </nav>
   </div>
