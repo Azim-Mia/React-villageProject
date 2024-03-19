@@ -4,8 +4,7 @@ import Header from '/data/data/com.termux/files/home/React-villageProject/src/he
 function App() {
   return (<> 
   <div><Header />
-  </div>
-
+  </div>  
   </>
   )
 }

@@ -1,9 +1,7 @@
 import React,{useState} from 'react';
-import {useNavigate} from 'react-router-dom'
 import axios from 'axios';
 import Style from './register.module.css'
 const Register=()=>{
-  const navigate=useNavigate();
   const [name, setName]=useState("")
   const [fatherName, setFatherName]=useState('')
   const [motherName,setMotherName]=useState('')
@@ -22,7 +20,7 @@ const user= {name:name,fatherName:fatherName,motherName:motherName,email:email,p
    e.preventDefault();
   const res=  await axios.post("http://localhost:3001/create",user);
   if(res.data.success){
-  navigate('/info')
+  alert("successfull user verify your Email.Cheack your Email")
   }
    }catch(err){
      alert(err.message)
