@@ -1,6 +1,35 @@
-.footer{
- min-height: 7vh;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.container_footer{
+  min-width: 992px;
+  display: flex;
+  width: auto;
+ min-height: 5vh;
   background:pink;
   margin-top: 10rem;
   border:1px solid yellow;
+}
+.left_side{
+  flex:3;
+  font-family: Verdana;
+}
+.right_side{
+ flex: 1; 
+}
+.form_cintainer{
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+.input_footer{
+  height: 55px;
+  border: 1px solid blue;
+  width: 300px;
+}
+.btn_container{
+  margin-left: -2px;
+}
+#subscribe{
+  font-size: 3rem;
 }

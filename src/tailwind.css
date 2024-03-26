@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.card {
+  @apply bg-white w-80 shadow-lg rounded-1  text-center pl-0 mt-8 m-0 text-sm overflow-hidden border-2 border-rose-600
+}
+.text_container{
+ @apply mt-0 text-md
+}
+.bagde{
+  @apply py-1 px-4 text-sm bg-pink rounded-1 text-white
+}
+.bagde2{
+  @apply py-1 px-4 text-sm bg-pink rounded-1 text-white ml-2
+}
+.bagde3{
+  @apply text-xl text-purple
+}
+.add_card{
+  @apply bg-yellow grid grid-cols-1 gap-1 ml-4 px-2 text-xl
+}
+.btn {
+   @apply bg-blue-700 rounded-1 py-1 px-1 text-yellow border-2 shadow-indigo-500 hover:bg-red-500
+}
+.dispaly_grid{
+     @apply md:grid grid-cols-2 mn:grid grid-cols-1 xl:grid grid-cols-3
+}

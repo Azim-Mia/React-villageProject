@@ -1,9 +1,13 @@
 .info_container{
-  font-family: Verdana;
+  width: 992px;
+  display:grid;
+font-family: Verdana;
 border: .5px solid #000;
 margin-top: 4rem;
 text-align: center;
 background:#ffccdd;
 font-size: 3rem;
 box-shadow: 3px 8px 20px yellow;
+}
+.info_article{
 }

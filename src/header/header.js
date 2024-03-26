@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './header.css';
 import Navber from '/data/data/com.termux/files/home/React-villageProject/src/header/linkAllPage.js';
-import Error from '/data/data/com.termux/files/home/React-villageProject/src/errorpage.js';
+import Error from '/data/data/com.termux/files/home/React-villageProject/src/otherComponent/errorpage.js';
 import Footer from '/data/data/com.termux/files/home/React-villageProject/src/footerPage/footer.jsx';
 import '/data/data/com.termux/files/home/React-villageProject/src/footerPage/footer.css';
 import Home from '/data/data/com.termux/files/home/React-villageProject/src/home/home.js'
@@ -15,12 +15,13 @@ import Active from './activeUser.js';
 import Login from './login.js';
 import Logout from '/data/data/com.termux/files/home/React-villageProject/src/logOutPage/logout.jsx';
 import Card from '/data/data/com.termux/files/home/React-villageProject/src/cardPage/card.js';
+import Product from '/data/data/com.termux/files/home/React-villageProject/src/productPage/product.jsx';
 // npm install react-icons --save
 // tarpor import
 import { FaBars } from "react-icons/fa";
 const Header=()=>{
   return (
-    <div className="header bg-blue-200">
+    <div className="md:text-md header bg-blue-200">
  <div className="upernavcontainer">
     <div className="bars">
     <p className="barsIcon"><FaBars /></p>
@@ -45,8 +46,10 @@ const Header=()=>{
 <Route path="/info" element={<Info />} />
 <Route path="/profile" element={<Setting />} />
 <Route path="/active/:token" element={<Active />} />
+<Route path="/product" element={<Product />} />
 <Route path="/*" element={<Error />} />
 </Routes>
+<div className="main"></div>
 <div className='footer'><Footer /></div>
 </BrowserRouter>
   </div>
