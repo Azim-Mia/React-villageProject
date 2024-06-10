@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 .card {
-  @apply bg-white w-80 shadow-lg rounded-1  text-center pl-0 mt-8 m-0 text-sm overflow-hidden border-2 border-rose-600
+  @apply shadow-lg rounded-1  text-center pl-0 mt-8 m-0 text-sm overflow-hidden border-2 border-rose-600
 }
 .text_container{
  @apply mt-0 text-md

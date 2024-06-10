@@ -25,7 +25,7 @@ const Info=()=>{
 {datas?.findAll.map((todo)=>{
     const {_id, name,fatherName, motherName,address, image,isAdmin}=todo;
     return <article key={_id} className="info_article">
-    <div className=""><img src={image} alt="photos" className="sm:w-full min:w-full md:w-full lg:w-full"/>
+    <div className=""><img src={image.url} alt="photos" className="sm:w-full min:w-full md:w-full lg:w-full"/>
      <p className="bg-yellow-500 md:text-2xl">Name:{name}</p>
     <p className="md:text-2xl">Father_Name:{fatherName}</p>
       <p className="md:text-2xl">Mother_name:{motherName}</p>

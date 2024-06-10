@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+//import { v4 as uuidv4 } from 'uuid';
 import Pagetitle from '/data/data/com.termux/files/home/React-villageProject/src/otherComponent/pageTitle.jsx';
 import '/data/data/com.termux/files/home/React-villageProject/src/tailwind.css'
 import {useNavigate} from 'react-router-dom';
@@ -18,7 +19,7 @@ const Register=()=>{
   const [address, setAddress]=useState('')
  const [images,setImage]=useState(null)
  const image='/data/data/com.termux/files/home/storage/dcim/Camera/'+images?.slice(12);
-const user= {name:name,fatherName:fatherName,motherName:motherName,email:email,password:password,address:address,postCode:postCode,village:village,image:image,nid:nid,birthId:birthId};
+const user= {name:name,fatherName:fatherName,motherName:motherName,email:email,password:password,address:address,postCode:postCode,village:village,image:{url:image},nid:nid,birthId:birthId};
   const handleSubmit=async(e)=>{
  try{
  axios.defaults.withCredentials=true;
@@ -33,7 +34,7 @@ const user= {name:name,fatherName:fatherName,motherName:motherName,email:email,p
     alert(res.data.message)
   }
    }catch(err){
-     alert("Information Problem. Try again Now..")
+     alert(err)
    }
   }
   return <div className={Style.container}>

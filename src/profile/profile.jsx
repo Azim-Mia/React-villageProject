@@ -1,5 +1,4 @@
 
-//import Setting from '/data/data/com.termux/files/home/React-villageProject/src/profile/setting.jsx';
 import './profile.css'
 import '/data/data/com.termux/files/home/React-villageProject/src/tailwind.css'
 const Profile=()=>{

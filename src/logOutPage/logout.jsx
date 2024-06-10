@@ -8,9 +8,9 @@ const Logout=()=>{
    e.preventDefault();
    axios.defaults.withCredentials=true;
    const res= await axios.post('http://localhost:3001/logout')
-   const ok=res.data.success
-   if(ok){
-     navigate('/login')
+   if(res.data.success){
+     alert("Successfull Logout..")
+    navigate('/login')
    }else{
     navigate('/info');
    }

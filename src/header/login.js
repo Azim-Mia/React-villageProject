@@ -9,14 +9,11 @@ const Login=()=>{
   const formHandle=async(e)=>{
     try{
    e.preventDefault();
-   axios.defaults.withCredentials=true;
    const res= await axios.post('http://localhost:3001/login',{email,password})
-   const ok=res.data.success
-   const message=res.data.message;
-   if(!ok){
-     alert(message)
+   if(res.data.success){
+     alert("User Login Information  Error: Try again");
    }else{
-     navigate('/info')
+  navigate('/info'); 
    }
    }catch(error){
      alert(error.message)

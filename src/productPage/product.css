@@ -6,3 +6,19 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
+.card{
+height:90%;
+width: 96%;
+background: #fff;
+position: relative;
+}
+.text_container_all{
+  position: relative;
+  height: 50%;
+}
+.images{
+  width: 100%;
+  position: relative;
+  height: 50%;
+
+}
