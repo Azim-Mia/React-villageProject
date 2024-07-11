@@ -17,7 +17,6 @@
 .drop_list{
   display:none;
   background: #000;
-  width: 15vh;
 }
 .bars:hover .drop_list{
   display: block;

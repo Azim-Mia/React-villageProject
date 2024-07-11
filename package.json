@@ -1,4 +1,5 @@
 {
+      "homepage":"https://azim-mia.github.io/React-villageProject",
   "name": "React-villageProject",
   "version": "0.1.0",
   "private": true,
@@ -24,6 +25,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+   "predeploy":"npm run build",
+   "deploy":"gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -46,13 +49,14 @@
       "last 1 safari version"
     ]
   },
-  "description": "<!DOCTYPE html> <html lang=\"en\">   <head>     <meta charset=\"utf-8\" />     <link rel=\"icon\" href=\"%PUBLIC_URL%/favicon.ico\" />     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />     <meta name=\"theme-color\" content=\"#000000\" />     <meta       name=\"description\"       content=\"Web site created using create-react-app\"     />     <link rel=\"stylesheet\" href=\"/index.css\" />     <title>React App</title>   </head>   <body>     <h1>Md Azim mia</h1>     <div id=\"root\"></div>   </body> </html>",
+  "description": "this is village Page",
   "main": "index.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.18",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1"
   }

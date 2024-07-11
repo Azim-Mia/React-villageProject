@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-villageProject/static/css/main.f45aabb4.css",
+    "main.js": "/React-villageProject/static/js/main.40ac71e9.js",
+    "index.html": "/React-villageProject/index.html",
+    "main.f45aabb4.css.map": "/React-villageProject/static/css/main.f45aabb4.css.map",
+    "main.40ac71e9.js.map": "/React-villageProject/static/js/main.40ac71e9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f45aabb4.css",
+    "static/js/main.40ac71e9.js"
+  ]
+}
