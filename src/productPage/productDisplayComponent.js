@@ -27,7 +27,7 @@ return <div>
 <Link to="/add-card" state={{_id, name,image}}><button  className="add_card">Add to Card</button></Link>
 <Link to="/more_product" className="bg-blue-700 text-white ml-2 text-sm">more product..</Link>
 <p>min. order: 2 pice</p>
-<button onClick={()=>handleRemoveProduct(name)}>remove</button>
+<button onClick={()=>handleRemoveProduct(name)} className="pb-12">remove</button>
 </div>
 </div>
 </article>

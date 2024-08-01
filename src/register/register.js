@@ -27,8 +27,7 @@ const user= {name:name,fatherName:fatherName,motherName:motherName,email:email,p
   const res=  await axios.post("http://localhost:3001/create",user);
   const ok=res.data.success
   if(ok){
-  alert(res.data.message)
-  navigate('/login');
+  alert(res.data.message + " Chack your Email")
   return;
   }else{
     alert(res.data.message)
