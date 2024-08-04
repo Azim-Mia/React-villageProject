@@ -28,6 +28,7 @@ const user= {name:name,fatherName:fatherName,motherName:motherName,email:email,p
   const ok=res.data.success
   if(ok){
   alert(res.data.message + " Chack your Email")
+  navigate('/login')
   return;
   }else{
     alert(res.data.message)
