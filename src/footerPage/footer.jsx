@@ -8,7 +8,7 @@ const Footer=()=>{
   </form>
   </div>
     <div className="right_side">
-    <p>&copy:Azim Islam</p>
+    <p>&copy:Azim Mia</p>
   </div>
   
   </footer>
