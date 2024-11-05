@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/React-villageProject/static/css/main.d5ee7f33.css",
-    "main.js": "/React-villageProject/static/js/main.195999a5.js",
+    "main.js": "/React-villageProject/static/js/main.3f76a2e3.js",
     "index.html": "/React-villageProject/index.html",
     "main.d5ee7f33.css.map": "/React-villageProject/static/css/main.d5ee7f33.css.map",
-    "main.195999a5.js.map": "/React-villageProject/static/js/main.195999a5.js.map"
+    "main.3f76a2e3.js.map": "/React-villageProject/static/js/main.3f76a2e3.js.map"
   },
   "entrypoints": [
     "static/css/main.d5ee7f33.css",
-    "static/js/main.195999a5.js"
+    "static/js/main.3f76a2e3.js"
   ]
 }
